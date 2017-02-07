@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="JavaScript.js" ></script>
+
+
+</head>
+
+<body>
+  <br/>
+  <div class="container">
+    <div class="row col-md-offset-1">
+      <h2 style="font-family:'Comic Sans MS', cursive, sans-serif;">Datos del Maestro<h2>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <div class="input-group" style="margin:10px;">
+          <span class="input-group-addon" style="min-width:100px; width:100px; max-width:100px;">Cedula</span>
+          <input type="text" class="form-control" placeholder="Cedula" style="min-width:250px;" id="txt_cedula" disabled="true">
+        </div>
+        <div class="input-group" style="margin:10px;">
+          <span class="input-group-addon" style="min-width:100px; width:100px; max-width:100px;">Nombre</span>
+          <input type="text" class="form-control" placeholder="Nombre" style="min-width:250px;" id="txt_nombre" disabled="true">
+        </div>
+        <div class="input-group" style="margin:10px;">
+          <span class="input-group-addon" style="min-width:100px; width:100px; max-width:100px;">Apellido</span>
+          <input type="text" class="form-control" placeholder="Apellido" style="min-width:250px;" id="txt_apellido" disabled="true">
+
+        </div>
+        <div class="input-group" style="margin:10px;">
+          <span class="input-group-addon" style="min-width:100px; width:100px; max-width:100px;">Experiencia</span>
+          <input type="text" class="form-control" placeholder="Experiencia" readonly="true" style="min-width:250px;" id="txt_exp">
+
+        </div>.
+
+        <button type="button" class="btn" style="margin:10px; width:100px; margin-left:0px;" id="btn_nuevo">Nuevo</button>
+        <button type="button" class="btn" style="margin:10px; width:100px;" id="btn_guardar">Guardar</button>
+        <a href="#" hidden="hidden" id="btn_modificar" style="margin:10px; width:100px;" >Modificar</a>
+
+      </div>
+      <div class="col-md-5 col-md-offset-2" style="height:230px; min-height:230px; max-height:230px; overflow-y:scroll;" id="div_data">
+        <table class="table" id="table">
+          <thead>
+            <tr>
+              <td>Nombre</td>
+              <td>Nivel</td>
+              <td>Experiencia</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr>
+              <td><input type="text" class="form-control" id="txt_nombre_pokemon"></td>
+              <td><input type="number" class="form-control" id="txt_nivel_pokemon"></td>
+              <td><input type="number" class="form-control" id="txt_exp_pokemon"></td>
+              <td><input type="button" class="btn" value="Agregar" id="btn_agregar"></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br/>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2 style="font-family:'Comic Sans MS', cursive, sans-serif;">Maestros Registrados</h2>
+        <table class="table table-bordered" id="tableMaster">
+          <thead>
+            <tr>
+              <td>Cedula</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>Experiencia</td>
+              <td>Numero de Pokemones</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody id="tbodyMaster">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
